@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <div class="container">
+            <a class="navbar-brand" href="/" style="color: #48D1CC;"><b>YOURCAM</b></a>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div class="buttons">
+            <button class="record"> RECORD</button>
+            <button class="stop">STOP</button>
+            <button class="watch">PREVIEW</button>
+            <a class="download_btn">DOWNLOAD</a>
+        </div>
+        <div class="video">
+            <div class="video-item">
+                <img src="record.png"class="icon">
+                <video id="preview" autoplay muted></video>
+            </div>
+            <div class="video-item">
+                <img src="preview.png"class="icon">
+                <video id="recording"></video>
+            </div>
+        </div>
+    </div>
+    <input type="file" accept="video/*" id="input-tag"/>
+<hr>
+<video controls id="video-tag">
+  <source id="video-source" src="splashVideo">
+  Your browser does not support the video tag.
+</video>
+    <script src="record.js"></script>
+</body>
+</html>
